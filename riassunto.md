@@ -33,7 +33,7 @@ Per ogni coppia (p, q), se è connessa passo alla coppia successiva, altrimenti 
     <img src = "foto\quickfind.png" width = 400 px>
 </div><br>
 
-⚠️ in breve: il **secondo** valore della coppia viene messo nel vettore **dove trovo il primo valore**.
+⚠️ in breve: per unire due elementi p e q, si sostituiscono tutti gli elementi del vettore id che hanno valore uguale a ``` id[p] ``` con il valore ``` id[q] ```.
 
 - #### Analisi complessità:
 
