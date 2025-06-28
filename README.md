@@ -9,12 +9,10 @@ Riassunto teorico del corso - Federico Dutto - Politecnico di Torino (A.A. 2024/
 * Θ(n): vengono fatte **esattamente** n operazioni.
 
 ```c
-for (int i = 0; i < n; i++) {
-        if (arr[i] == 1) {
+for (int i = 0; i < n; i++) 
+        if (arr[i] == 1) 
             return true;
-        }
-    }
-    return false;
+return false;
 
 // T(n) ∈ O(n), T(n) ∈ Ω(n), T(n) ∉ Θ(n)
 ```
@@ -158,7 +156,7 @@ Concettualmente il vettore A è diviso in 2 sottovettori: quello di destra, il q
 
 Caratteristiche:
 - In loco: oltre al vettore A si usa solo la variabile ``` temp ```;
-- Stabile: tra più chiavi duplicate quella più a destra prende laposizione più a destra e non viene mai scavalcata a destra daun’altra chiave uguale.
+- Stabile: tra più chiavi duplicate quella più a destra prende la posizione più a destra e non viene mai scavalcata a destra da un’altra chiave uguale.
 
 ### Versione ottimizzata:
 
@@ -244,7 +242,7 @@ Procedimento:
 
 Caratteristiche:
 - Non in loco: oltre al vettore A si usano anche i vettori B e C;
-- Stabile: la stabilità è garantita dalla scansione da destra a sinistra del vettore A quando si posizionano gli elementi: in caso di chiavi duplicate, la prima a essere posizionata è l’ultima e finisce il più a destra possibile. Le altre chiavi duplicate non potranno mai scavalcarla visto che si decrementa la cella corrispondente del vettore delle occorrenze multiple. Se la scansione fosse stata da sinistra verso destra non si sarebbegarantita la stabilità dell’algoritmo.
+- Stabile: la stabilità è garantita dalla scansione da destra a sinistra del vettore A quando si posizionano gli elementi: in caso di chiavi duplicate, la prima a essere posizionata è l’ultima e finisce il più a destra possibile. Le altre chiavi duplicate non potranno mai scavalcarla visto che si decrementa la cella corrispondente del vettore delle occorrenze multiple. Se la scansione fosse stata da sinistra verso destra non si sarebbe garantita la stabilità dell’algoritmo.
 <br>
 
 ***
