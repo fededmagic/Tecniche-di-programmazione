@@ -291,3 +291,10 @@ Caratteristiche:
 <div align="center">
     <img src = "foto\complessita_sort.png" width = 700px>
 </div><br>
+
+## 7. Riassunto caratteristiche algoritmi
+
+<br>
+<div align="center">
+    <img src = "foto\caratteristiche_sort.png" width = 700px>
+</div><br>
